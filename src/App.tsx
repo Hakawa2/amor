@@ -9,7 +9,7 @@ function App() {
   const [step, setStep] = useState(0);
 
   useEffect(() => {
-    const timer = setTimeout(() => setStep(1), 5000); // 30s para mostrar a barra
+    const timer = setTimeout(() => setStep(1), 10000); // 30s para mostrar a barra
     return () => clearTimeout(timer);
   }, []);
 
