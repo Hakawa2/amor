@@ -1,0 +1,44 @@
+.progress-container {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.text {
+  font-size: 2rem;
+  opacity: 0;
+  animation: myAnim 2s linear infinite;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.progress-bar-bg {
+  width: 80%;
+  height: 20px;
+  background-color: #eeeeee17;
+  border-radius: 40px;
+  margin-top: 20px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.226);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #fa6807;
+  transition: width 0.3s ease;
+}
